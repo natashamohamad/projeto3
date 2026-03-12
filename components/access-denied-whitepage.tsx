@@ -10,329 +10,277 @@ import {
   Shield,
   Sparkles,
 } from "lucide-react";
+
 import Link from "next/link";
 import ConfettiEffect from "@/components/confetti";
 
 const CHECKOUT_URL = "https://teu_link_de_checkout_aqui";
 
-export default function AccessDenied() {
+export default function FacelessYoutubePage() {
+
   const features = [
     {
       icon: Zap,
-      title: "Master the Faceless YouTube Automation",
+      title: "AI Powered Video Creation",
       description:
-        "Maximize your account's visibility and reach millions of viewers",
-    },
-    {
-      icon: Target,
-      title: "Optimize Your YouTube Profile",
-      description:
-        "Convert viewers into loyal followers with proven strategies",
+        "Generate viral YouTube content without filming or showing your face."
     },
     {
       icon: Rocket,
-      title: "Unlimited Content Creation",
+      title: "Automation System",
       description:
-        "Use Canva to create unlimited Shorts and Videos for YouTube",
+        "Build channels that produce content consistently using simple workflows."
     },
     {
       icon: TrendingUp,
-      title: "Stay Ahead of Trends",
+      title: "Viral Growth Strategies",
       description:
-        "Discover trending sounds and concepts that go viral on YouTube",
+        "Learn the exact methods used by fast growing faceless channels."
+    },
+    {
+      icon: Target,
+      title: "Content That Attracts Views",
+      description:
+        "Create videos designed to capture attention and retain viewers."
     },
     {
       icon: Sparkles,
-      title: "Viral Content Strategy",
+      title: "Shorts Domination",
       description:
-        "Create compelling videos that earn thousands of views per video",
+        "Leverage YouTube Shorts to rapidly grow new channels."
     },
     {
       icon: Shield,
-      title: "Avoid Common Pitfalls",
-      description: "Learn how to avoid penalties and ensure steady growth",
-    },
+      title: "Safe Monetization Path",
+      description:
+        "Avoid common mistakes that cause demonetization or channel bans."
+    }
   ];
 
   const benefits = [
-    "Master the Faceless YouTube Automation and maximize your account's visibility!",
-    "Optimize your YouTube profile to convert viewers into loyal followers",
-    "How to use Canva to create unlimited Shorts and Videos for YouTube",
-    "Stay up to date with the latest Faceless YouTube Automation trends",
-    "Discover how to find and leverage trending sounds and concepts on YouTube.",
-    "Create compelling videos that go viral on YouTube, earning you thousands of views per video.",
-    "Develop a winning content strategy to become an influential YouTube creator.",
-    "Use Canva to create Instagram branding elements including Profile Photos, Banners and more",
-    "Harness the power of ChatGPT to enhance your YouTube video content and engage your audience.",
-    "Avoid common pitfalls and penalties on Faceless YouTube, ensuring steady growth.",
-    "Unleash growth hacks to land your content on the YouTube Home feed and achieve viral success.",
-    "Unlock insider secrets of YouTube Marketing that industry experts rely on.",
-    "Stay ahead of your competitors using advanced YouTube features and techniques.",
-    "Optimize your YouTube content for search engine visibility through SEO strategies.",
-    "Master the latest YouTube marketing methods to stand out in a crowded space",
-    "Discover valuable tips and tricks to elevate your YouTube Shorts marketing game.",
-    "Learn how to use ChatGPT effectively for content creation",
+    "How to create YouTube channels without recording videos",
+    "Step-by-step system to produce unlimited content",
+    "How to identify viral niches before they explode",
+    "Content frameworks used by top creators",
+    "Simple editing workflows anyone can follow",
+    "AI tools that accelerate video production",
+    "How to structure videos to keep viewers watching",
+    "How to scale content production efficiently",
+    "How to build channels designed for long term growth",
+    "Avoid beginner mistakes that kill new channels"
   ];
 
   return (
-    <div className="w-full h-svh bg-black text-white relative overflow-x-hidden overflow-y-auto">
-      {/* Animated background grid */}
+
+    <div className="w-full min-h-screen bg-[#0F1115] text-white overflow-x-hidden">
+
+      {/* Background */}
       <div className="absolute inset-0 opacity-20 pointer-events-none">
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: `linear-gradient(rgba(255,0,0,0.1) 1px, transparent 1px),
-                            linear-gradient(90deg, rgba(255,0,0,0.1) 1px, transparent 1px)`,
-            backgroundSize: "50px 50px",
+            backgroundImage: `linear-gradient(rgba(255,0,0,0.08) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(255,0,0,0.08) 1px, transparent 1px)`,
+            backgroundSize: "60px 60px"
           }}
         />
       </div>
 
-      {/* Red accent line (top of page) */}
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-600 to-transparent pointer-events-none" />
+      <main className="relative z-10">
 
-      <main className="relative z-10 w-full">
-        {/* HERO SECTION */}
-        <section className="relative w-full">
-          <div className="max-w-7xl mx-auto px-6 py-20 md:py-32 text-center space-y-8">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="space-y-6"
-            >
-              {/* Badge */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.2 }}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-red-600/50 bg-red-600/10 backdrop-blur-sm"
+        {/* HERO */}
+
+        <section className="max-w-6xl mx-auto px-6 py-24 text-center">
+
+          <motion.div
+            initial={{opacity:0, y:40}}
+            animate={{opacity:1, y:0}}
+            transition={{duration:0.7}}
+          >
+
+            <h1 className="text-5xl md:text-7xl font-black tracking-tight">
+
+              <span className="text-gray-200">
+                FACELESS
+              </span>
+
+              <br/>
+
+              <span className="bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent">
+                YOUTUBE
+              </span>
+
+            </h1>
+
+            <p className="mt-8 text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+
+              Discover how modern creators are building powerful YouTube
+              channels without filming themselves, without expensive gear,
+              and without complicated production.
+
+            </p>
+
+            <p className="mt-4 text-lg text-gray-400">
+
+              A structured system to help you create content faster,
+              reach more viewers, and build scalable channels.
+
+            </p>
+
+            <div className="mt-10">
+
+              <button
+                onClick={()=> window.open(CHECKOUT_URL,"_blank")}
+                className="group px-10 py-5 bg-red-600 hover:bg-red-700 transition-all rounded-lg font-bold text-lg flex items-center gap-3 mx-auto shadow-xl shadow-red-600/30"
               >
-                <span className="h-2 w-2 rounded-full bg-red-600 animate-pulse" />
-                <span className="text-sm font-medium text-red-400">
-                  MASTERMIND PROGRAM
-                </span>
-              </motion.div>
 
-              <h1 className="text-5xl md:text-7xl font-black tracking-tight">
-                <span className="bg-gradient-to-r from-white via-red-500 to-white bg-clip-text text-transparent">
-                  MASTERMIND
-                </span>
-                <br />
-                <span className="text-white">FACELESS CHANNELS</span>
-              </h1>
+                GET INSTANT ACCESS
 
-              <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
-                Master the Faceless YouTube Automation and{" "}
-                <span className="text-red-500 font-semibold">
-                  maximize your account&apos;s visibility!
-                </span>
-              </p>
+                <ArrowRight className="group-hover:translate-x-1 transition"/>
 
-              {/* CTA Button */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4 }}
-                className="pt-6"
-              >
-                <button
-                  onClick={() => window.open(CHECKOUT_URL, "_blank")}
-                  className="group relative inline-flex items-center gap-3 px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-bold text-lg rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-red-600/50"
-                >
-                  <span>START YOUR JOURNEY</span>
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  <div className="absolute inset-0 rounded-lg bg-red-600 blur-xl opacity-50 group-hover:opacity-75 transition-opacity -z-10" />
-                </button>
-              </motion.div>
-            </motion.div>
-          </div>
-        </section>
+              </button>
 
-        {/* FEATURES GRID */}
-        <section className="relative z-10 w-full py-20 border-t border-red-600/20">
-          <div className="max-w-7xl mx-auto px-6">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                What You&apos;ll <span className="text-red-600">Master</span>
-              </h2>
-              <p className="text-gray-400 text-lg">
-                Everything you need to dominate YouTube
-              </p>
-            </motion.div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {features.map((feature, index) => {
-                const Icon = feature.icon;
-                return (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    className="group relative p-6 rounded-xl border border-gray-800 bg-gradient-to-br from-gray-900/50 to-black hover:border-red-600/50 transition-all duration-300"
-                  >
-                    <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-red-600/0 to-red-600/0 group-hover:from-red-600/10 group-hover:to-red-600/5 transition-all duration-300" />
-                    <div className="relative z-10">
-                      <div className="inline-flex p-3 rounded-lg bg-red-600/20 border border-red-600/30 mb-4">
-                        <Icon className="w-6 h-6 text-red-500" />
-                      </div>
-                      <h3 className="text-xl font-bold mb-2 text-white">
-                        {feature.title}
-                      </h3>
-                      <p className="text-gray-400 leading-relaxed">
-                        {feature.description}
-                      </p>
-                    </div>
-                  </motion.div>
-                );
-              })}
             </div>
-          </div>
+
+          </motion.div>
+
         </section>
 
-        {/* BENEFITS LIST */}
-        <section className="relative z-10 w-full py-20 border-t border-red-600/20">
-          <div className="max-w-6xl mx-auto px-6">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                Complete <span className="text-red-600">Learning Path</span>
-              </h2>
-              <p className="text-gray-400 text-lg">
-                Everything included in the Mastermind
-              </p>
-            </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {benefits.map((benefit, index) => (
+        {/* FEATURES */}
+
+        <section className="max-w-6xl mx-auto px-6 py-20">
+
+          <h2 className="text-4xl font-bold text-center mb-16">
+
+            What You Will Learn
+
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            {features.map((feature,index)=>{
+
+              const Icon = feature.icon
+
+              return (
+
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.05 }}
-                  className="flex items-start gap-4 p-4 rounded-lg border border-gray-800 bg-gray-900/30 hover:border-red-600/50 hover:bg-gray-900/50 transition-all duration-300"
+                  initial={{opacity:0,y:20}}
+                  whileInView={{opacity:1,y:0}}
+                  viewport={{once:true}}
+                  transition={{delay:index*0.1}}
+                  className="bg-[#1A1D23] border border-gray-700 p-6 rounded-xl hover:border-red-500 transition"
                 >
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-red-600 flex items-center justify-center mt-0.5">
-                    <div className="w-2 h-2 rounded-full bg-white" />
+
+                  <div className="bg-red-600/20 p-3 w-fit rounded-lg mb-4">
+
+                    <Icon className="text-red-500"/>
+
                   </div>
-                  <p className="text-gray-300 leading-relaxed">{benefit}</p>
+
+                  <h3 className="text-xl font-bold mb-2">
+
+                    {feature.title}
+
+                  </h3>
+
+                  <p className="text-gray-400">
+
+                    {feature.description}
+
+                  </p>
+
                 </motion.div>
-              ))}
-            </div>
+
+              )
+
+            })}
+
           </div>
+
         </section>
 
-        {/* FINAL CTA */}
-        <section className="relative z-10 w-full py-20 border-t border-red-600/20">
-          <div className="max-w-4xl mx-auto px-6 text-center space-y-8">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="space-y-6"
-            >
-              <h2 className="text-4xl md:text-6xl font-black">
-                Ready to <span className="text-red-600">Dominate</span> YouTube?
-              </h2>
-              <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-                Join the Mastermind Faceless Channels program and transform your
-                YouTube presence into a revenue-generating machine.
-              </p>
 
-              <div className="pt-8">
-                <button
-                  onClick={() => window.open(CHECKOUT_URL, "_blank")}
-                  className="group relative inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold text-xl rounded-lg transition-all duration-300 transform hover:scale-105 shadow-2xl shadow-red-600/50"
-                >
-                  <span>GET STARTED NOW</span>
-                  <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
-                  <div className="absolute inset-0 rounded-lg bg-red-600 blur-2xl opacity-60 group-hover:opacity-80 transition-opacity -z-10" />
-                </button>
+        {/* BENEFITS */}
+
+        <section className="max-w-5xl mx-auto px-6 py-20">
+
+          <h2 className="text-4xl font-bold text-center mb-14">
+
+            Inside the Program
+
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-5">
+
+            {benefits.map((item,index)=>(
+
+              <div
+                key={index}
+                className="flex gap-4 bg-[#1A1D23] border border-gray-700 p-5 rounded-lg hover:border-red-500 transition"
+              >
+
+                <div className="w-5 h-5 mt-1 rounded-full bg-red-600"/>
+
+                <p className="text-gray-300">
+
+                  {item}
+
+                </p>
+
               </div>
 
-              <p className="text-sm text-gray-500 pt-4">
-                Limited spots available • Join thousands of successful creators
-              </p>
-            </motion.div>
+            ))}
+
           </div>
+
         </section>
 
-        <ConfettiEffect />
+
+        {/* FINAL CTA */}
+
+        <section className="text-center py-24 px-6">
+
+          <h2 className="text-5xl font-black mb-6">
+
+            Start Your Faceless Channel Today
+
+          </h2>
+
+          <p className="text-gray-400 max-w-2xl mx-auto mb-10">
+
+            The opportunity to build digital channels has never been more
+            accessible. With the right strategy and tools you can begin
+            creating powerful content immediately.
+
+          </p>
+
+          <button
+            onClick={()=> window.open(CHECKOUT_URL,"_blank")}
+            className="px-12 py-6 bg-red-600 hover:bg-red-700 rounded-lg font-bold text-xl shadow-xl shadow-red-600/30 transition"
+          >
+
+            ACCESS THE PROGRAM
+
+          </button>
+
+        </section>
+
+        <ConfettiEffect/>
+
       </main>
 
-      <footer
-        className="relative z-10 w-full py-8 px-4"
-        style={{ backgroundColor: "#0A0A0A" }}
-      >
-        {/* Red divider line (footer boundary) */}
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-600 to-transparent pointer-events-none" />
-        <div className="max-w-3xl mx-auto text-center space-y-4">
-          <nav className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm text-white/70">
-            <Link
-              href="/#"
-              className="hover:text-white hover:underline transition-colors"
-            >
-              Contact
-            </Link>
-            <span className="text-white/40" aria-hidden>
-              |
-            </span>
-            <Link
-              href="/#"
-              className="hover:text-white hover:underline transition-colors"
-            >
-              Terms of Use
-            </Link>
-            <span className="text-white/40" aria-hidden>
-              |
-            </span>
-            <Link
-              href="/#"
-              className="hover:text-white hover:underline transition-colors"
-            >
-              Disclaimer
-            </Link>
-            <span className="text-white/40" aria-hidden>
-              |
-            </span>
-            <Link
-              href="/#"
-              className="hover:text-white hover:underline transition-colors"
-            >
-              Privacy Policy
-            </Link>
-            <span className="text-white/40" aria-hidden>
-              |
-            </span>
-            <Link
-              href="/#"
-              className="hover:text-white hover:underline transition-colors"
-            >
-              Refund Policy
-            </Link>
-          </nav>
-          <p className="text-xs text-white/50">
-            © 2025 by All rights reserved.
-            <br />
-            <br />
-            This site has no affiliation with Hotmart or Hotmart Company. It is
-            also neither sponsored nor endorsed by Hotmart in any way. HOTMART
-            is a registered trademark of Hotmart Company.
-          </p>
-        </div>
+
+      {/* FOOTER */}
+
+      <footer className="py-10 text-center text-gray-500 text-sm border-t border-gray-800">
+
+        © 2025 All Rights Reserved
+
       </footer>
+
     </div>
-  );
+  )
 }
