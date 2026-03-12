@@ -8,7 +8,7 @@ import { useState } from "react";
 import { useLayer } from "@/context/layer-provider";
 import { CheckCheck, Loader2 } from "lucide-react";
 
-const CHECKOUT_LINK = "https://teu_link_de_checkout_aqui"; // ou use promoLink do useLayer()
+const CHECKOUT_LINK = "https://pay.hotmart.com/U104758447T?off=6ijz3f3g"; // ou use promoLink do useLayer()
 
 export default function Black() {
   const { promoLink } = useLayer();
