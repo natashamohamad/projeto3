@@ -17,10 +17,10 @@ export default function Page() {
 
   // SET CONTENT DATA
   const VSL = VSLBlackNew;
-  const videoId = "68ffb7d22ad758e3709e1303";
+  const videoId = "69a8a54ff142385a7d857fc5";
   const backLink = `https://${host}/promo`;
-  const checkoutLink = "https://teu_link_de_checkout_aqui";
-  const pitchTime = 780;
+  const checkoutLink = "https://pay.hotmart.com/U104758447T?off=imqt8k2q";
+  const pitchTime = 705;
 
   // VIDEO VERIFY
   useEffect(() => {
