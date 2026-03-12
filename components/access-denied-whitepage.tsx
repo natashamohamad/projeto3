@@ -11,7 +11,7 @@ import {
   Sparkles,
 } from "lucide-react";
 
-import Link from "next/link";
+
 import ConfettiEffect from "@/components/confetti";
 
 const CHECKOUT_URL = "https://teu_link_de_checkout_aqui";
