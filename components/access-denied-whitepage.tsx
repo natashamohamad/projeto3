@@ -1,12 +1,10 @@
 export default function FacelessYouTube() {
 
-  const checkout = "https://pay.hotmart.com/U104758447T?off=imqt8k2q"
-
   return (
     <div style={{
       background:"#f5f5f5",
       minHeight:"100vh",
-      fontFamily:"system-ui",
+      fontFamily:"system-ui, -apple-system, sans-serif",
       color:"#111"
     }}>
 
@@ -20,7 +18,7 @@ export default function FacelessYouTube() {
       }}>
 
         <div style={{
-          background:"#ffffff",
+          background:"#fff",
           padding:"10px 20px",
           borderRadius:"999px",
           display:"inline-block",
@@ -32,7 +30,7 @@ export default function FacelessYouTube() {
         </div>
 
         <h1 style={{
-          fontSize:"54px",
+          fontSize:"52px",
           fontWeight:"800",
           lineHeight:"1.1",
           marginBottom:"20px"
@@ -46,28 +44,27 @@ export default function FacelessYouTube() {
           maxWidth:"720px",
           margin:"0 auto"
         }}>
-          Discover how modern creators are building massive YouTube audiences
-          without recording themselves, without expensive equipment and without
-          spending hours editing videos.
+          Discover how creators are building massive YouTube audiences without
+          recording themselves, expensive gear or complex editing.
         </p>
 
         <div style={{marginTop:"40px"}}>
 
-          <button
-            onClick={()=>window.open(checkout)}
+          <a
+            href="https://pay.hotmart.com/U104758447T?off=imqt8k2q"
             style={{
               background:"#ff0000",
               color:"#fff",
-              border:"none",
               padding:"18px 40px",
               fontSize:"20px",
               borderRadius:"10px",
-              cursor:"pointer",
-              fontWeight:"700"
+              textDecoration:"none",
+              fontWeight:"700",
+              display:"inline-block"
             }}
           >
             Get Instant Access
-          </button>
+          </a>
 
         </div>
 
@@ -77,7 +74,7 @@ export default function FacelessYouTube() {
       {/* BENEFITS */}
 
       <section style={{
-        background:"#ffffff",
+        background:"#fff",
         padding:"80px 20px"
       }}>
 
@@ -104,8 +101,8 @@ export default function FacelessYouTube() {
             <div>
               <h3>Faceless Content Model</h3>
               <p style={{color:"#555"}}>
-                Learn the structure used by successful creators to publish
-                videos consistently without filming themselves.
+                Learn the structure used by successful creators to publish videos
+                consistently without filming themselves.
               </p>
             </div>
 
@@ -113,39 +110,14 @@ export default function FacelessYouTube() {
               <h3>Viral Video Framework</h3>
               <p style={{color:"#555"}}>
                 Discover how to create videos designed to capture attention and
-                keep viewers watching.
+                increase watch time.
               </p>
             </div>
 
             <div>
               <h3>Channel Growth Strategy</h3>
               <p style={{color:"#555"}}>
-                Understand how channels scale quickly when using the right
-                niche and content structure.
-              </p>
-            </div>
-
-            <div>
-              <h3>Simple Production System</h3>
-              <p style={{color:"#555"}}>
-                Create videos faster using tools that simplify editing and
-                content creation.
-              </p>
-            </div>
-
-            <div>
-              <h3>Shorts Growth Strategy</h3>
-              <p style={{color:"#555"}}>
-                Learn how YouTube Shorts accelerate audience growth for new
-                channels.
-              </p>
-            </div>
-
-            <div>
-              <h3>Content Ideas Engine</h3>
-              <p style={{color:"#555"}}>
-                Never run out of video ideas with a repeatable system used by
-                top creators.
+                Understand the strategies used to grow YouTube channels faster.
               </p>
             </div>
 
@@ -178,24 +150,24 @@ export default function FacelessYouTube() {
           margin:"0 auto 40px"
         }}>
           Access the complete guide and learn how to create YouTube channels
-          designed to grow consistently using modern content strategies.
+          designed to grow consistently.
         </p>
 
-        <button
-          onClick={()=>window.open(checkout)}
+        <a
+          href="https://pay.hotmart.com/U104758447T?off=imqt8k2q"
           style={{
             background:"#ff0000",
             color:"#fff",
-            border:"none",
             padding:"20px 45px",
             fontSize:"20px",
             borderRadius:"10px",
-            cursor:"pointer",
-            fontWeight:"700"
+            textDecoration:"none",
+            fontWeight:"700",
+            display:"inline-block"
           }}
         >
           Access The Program
-        </button>
+        </a>
 
       </section>
 
